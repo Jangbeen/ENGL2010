@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jangbeen Park's Powerlifting</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <style>
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                }
+            #squatDescription{
+                text-align: center;
+            }
+            #deadliftDescription{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-role="page" id="index"> 
+            <div data-role="header">
+                <h1>Powerlifting</h1>
+                <div data-role="navbar">
+                        <ul>
+                        <li><a href="#educationPage" data-icon="heart" data-transition="flow">Squat</a></li>
+                        <li><a href="#experiencePage" data-icon="user" data-transition="flow">Bench Press</a></li>
+                        <li><a href="#skillPage" data-icon="heart" data-transition="flow">Deadlift</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <h1>Pwerlifting</h1>
+
+                <section class="contactSection">
+                <hr>
+                <h3>&nbsp;&nbsp;&nbsp;What is Powerlifting?</h3>
+                <p>&nbsp;&nbsp;&nbsp;Powerlifting originally from weightlifting.<br>&nbsp;&nbsp;&nbsp;In powerlifting, people compete for their max squat, bench press, and deadlift.<br>&nbsp;&nbsp;&nbsp;People call those three workouts as “BIG 3”.</p>
+                </section>
+            </div>
+        </div>
+        <div data-role="page" id="educationPage">
+            <div data-role="header">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#index" data-icon="home" data-transition="flow">Go To Main Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h2>Squat</h2>
+            <img src="squat.gif" alt="Max Squat 405lbs">
+            <p id="squatDescription">This is me doing low-bar back squat.</p>
+           
+        </div>
+        <div data-role="page" id="experiencePage">
+            <div data-role="header">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#index" data-icon="home" data-transition="flow">Go To Main Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h2>Bench Press</h2>
+            <img src="benchpress.gif" alt="Max Deadlift 425lbs">
+            <p id="deadliftDescription">This is me doing benchpress.</p>
+        </div>
+        <div data-role="page" id="skillPage">
+            <div data-role="header">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#index" data-icon="home" data-transition="flow">Go To Main Page</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Deadlift</h2>
+            <img src="deadlift.gif" alt="Max Deadlift 425lbs">
+            <p id="deadliftDescription">This is me doing conventional deadlift.</p>
+        </div>
+    </body>
+</html>
